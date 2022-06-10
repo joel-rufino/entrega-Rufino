@@ -1,0 +1,90 @@
+header{background-color: black;}
+#logo{position: fixed;
+    display: block;
+    margin-top: auto;
+    margin-right: 10px;
+    margin-bottom: auto;
+    margin-left: 1110px;}
+
+body{background-color: rgb(0, 139, 109);}
+h1{color: red;
+text-decoration: underline;
+font-family: Arial, Helvetica, sans-serif;}
+
+#lista{background-color: rgb(0, 247, 255);
+    display: block;}
+
+fieldset{border-style:  solid;
+    border-color: rgb(0, 89, 255);}
+input{border-style: groove;}
+
+legend{color: black;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;}
+
+
+footer{background-color: rgb(127, 204, 255);}
+footer div en{color: cyan;}
+footer div {background-color: rgb(0, 139, 132);
+width: 1100px;
+height: 50px;
+border: 5px;
+border-style: groove;
+border-color: aquamarine;
+padding: 5px;
+margin: 5px;}
+
+
+#gmail{
+    animation-name: loop4;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+animation-duration: 2s;
+}
+
+#instagram{
+    animation-name: loop3;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+
+}
+
+#twitter{
+    animation-name: loop2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+#whatsapp{
+    animation-name: loop1;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+animation-duration: 2s;
+}
+
+
+@keyframes loop4{ 
+    0%{ background-image: linear-gradient(to top, red 0 15%, green)} 
+    
+    100%{ background-image: linear-gradient(to top, red 0 60%, green);}
+}
+
+@keyframes loop1 {
+    0%{ background-image: linear-gradient(to top, green 0 15%, blue)} 
+    50%{background-image: linear-gradient(to top, green 0 40%, blue,) }
+    100%{ background-image: linear-gradient(to top, green 0 60%, blue);}
+}
+
+@keyframes loop3 {
+    0%{ background-image: linear-gradient(to top, purple 0 15%, red)} 
+    
+    100%{ background-image: linear-gradient(to top, purple 0 60%, red)}
+}
+
+@keyframes loop2{
+    0%{ background-image: linear-gradient(to top, blue 0 1%, purple)} 
+     
+    100%{ background-image: linear-gradient(to top, blue 0 50%, purple)}
+}
