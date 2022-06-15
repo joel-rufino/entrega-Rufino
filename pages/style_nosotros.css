@@ -19,7 +19,8 @@ font-family: Arial, Helvetica, sans-serif;
 font-weight: bold;}
 
     body{background-color: rgb(0, 139, 109);}
-#logo{position: fixed;
+
+ #logo{position: fixed;
     display: block;
     margin-top: auto;
     margin-right: 10px;
@@ -35,3 +36,57 @@ font-weight: bold;}
     border-color: aquamarine;
     padding: 5px;
     margin: 5px;}
+
+    #gmail{
+        animation-name: loop4;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    }
+    
+    #instagram{
+        animation-name: loop3;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+    
+    }
+    
+    #twitter{
+        animation-name: loop2;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+    }
+    
+    #whatsapp{
+        animation-name: loop1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    }
+    
+    
+    @keyframes loop4{ 
+        0%{ background-image: linear-gradient(to top, red 0 15%, green)} 
+        
+        100%{ background-image: linear-gradient(to top, red 0 60%, green);}
+    }
+    
+    @keyframes loop1 {
+        0%{ background-image: linear-gradient(to top, green 0 15%, blue)} 
+        50%{background-image: linear-gradient(to top, green 0 40%, blue,) }
+        100%{ background-image: linear-gradient(to top, green 0 60%, blue);}
+    }
+    
+    @keyframes loop3 {
+        0%{ background-image: linear-gradient(to top, purple 0 15%, red)} 
+        
+        100%{ background-image: linear-gradient(to top, purple 0 60%, red)}
+    }
+    
+    @keyframes loop2{
+        0%{ background-image: linear-gradient(to top, blue 0 1%, purple)} 
+         
+        100%{ background-image: linear-gradient(to top, blue 0 50%, purple)}
+    }
