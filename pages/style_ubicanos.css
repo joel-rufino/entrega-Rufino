@@ -22,6 +22,9 @@ display: block;}
     transform: translatex(-205px);
 }
 
+a:visited{ color: blueviolet;}
+a:active{ color: black}
+
 main{display:block;}
 h2{color: red;
 text-decoration: underline;

@@ -20,6 +20,9 @@ font-weight: bold;}
 
     body{background-color: rgb(0, 139, 109);}
 
+    a:visited{ color: blueviolet;}
+    a:active{ color: black}
+
  #logo{position: fixed;
     display: block;
     margin-top: auto;

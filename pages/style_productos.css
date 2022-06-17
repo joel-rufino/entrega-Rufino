@@ -12,10 +12,10 @@ header{background-color:black}
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;}
 
+    a:visited{ color: blueviolet;}
+    a:active{ color: black}
 
-
-#listas{background-color: rgb(0, 247, 255);
-        display: block;}
+#listas{background-color: rgb(0, 247, 255);}
 
 #titulo{color: red;
 text-decoration: underline;
@@ -32,6 +32,7 @@ font-weight: bold;}
 .producto{border-style: groove;
 border-color: black;
 }
+
 
 body{background-color: rgb(0, 139, 109);}
 footer{background-color: rgb(127, 204, 255);}
@@ -117,6 +118,10 @@ footer div {background-color: rgb(0, 139, 132);
     
     #logo{display: none;}
 
+    p{
+        overflow: hidden;
+        width: 200px;
+    }
 
     article{flex-direction: column;
     align-items: start;}
@@ -139,12 +144,51 @@ footer div {background-color: rgb(0, 139, 132);
 
 }
 
-@media screen and (min-width: 992px) 
+@media screen and (min-width: 1200px) 
 {
+
+    #logo{position: fixed;
+        display: block;
+        margin-top: auto;
+        margin-right: 100px;
+        margin-bottom: auto;
+        margin-left: 1100px;}  
+
+
+    article{flex-direction: row;
+        align-items: start;}
+
+        p{
+            overflow: hidden;
+            width: 200px;
+        }
+
+
+  
+
+    body{
+        height: 609px;
+        width: 1200px;
+    }
+
 
     .redes{ grid-template-rows: auto auto auto auto;
         grid-template-columns: 60px auto;
         align-items: center;}
 
-}
+        footer{background-color: rgb(127, 204, 255);
+            width: 1200px;
+           }
+           footer div en{color: cyan;}
+           footer div {background-color: rgb(0, 139, 132);
+               width: 1010px;
+               height: 70px;
+               border: 5px;
+               border-style:groove;
+               border-color: aquamarine;
+               padding: 5px;
+               margin: 5px;}
+   }
+
+
     
