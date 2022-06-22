@@ -1,220 +1,359 @@
-header{background-color:black}
-
-#logo{position: fixed;
-display: block;
-margin-top: auto;
-margin-right: 10px;
-margin-bottom: auto;
-margin-left: 1110px;}
-
-h1{color: rgba(255, 0, 0, 0.863);
-text-decoration: underline;
-text-align: center;
-font-weight: bold;
-font-family: Arial, Helvetica, sans-serif;
-background-color:black}
-
-a:visited{ color: blueviolet;}
-a:active{ color: black}
-
-#lista{background-color: rgb(0, 247, 255);}
-
-body{background-color: rgb(0, 139, 109);}
-
-h2{color:rgba(255, 0, 0, 0.877);
-text-decoration: underline;
-font-family: Arial, Helvetica, sans-serif;}
-
-
-#centro{display: inline-block;
-transform: translateY(310px);}
-
-#entrenar{display:inline-block;
-    margin-top: auto;
-   margin-right: 10px;
-    margin-bottom: auto;
-    margin-left: 550px;
-transform: translatey(-300px);}
-
-footer{background-color: rgb(127, 204, 255);}
-
-h3{color: rgba(255, 0, 0, 0.836);
-text-decoration: underline;
-font-family: Arial, Helvetica, sans-serif;}
-
-footer div en{color: cyan;}
-
-footer div {background-color: rgb(0, 139, 132);
-width: 1100px;
-height: 50px;
-border: 5px;
-border-style:groove;
-border-color: aquamarine;
-padding: 5px;
-margin: 5px;}
-
-.redes{display: grid;}
-
-#gmail{
-    animation-name: loop4;
-animation-iteration-count: infinite;
-animation-timing-function: ease-in;
-animation-duration: 2s;
+header {
+  background-color: black;
 }
 
-#instagram{
-    animation-name: loop3;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
-
+#logo {
+  position: fixed;
+  display: block;
+  margin-top: auto;
+  margin-right: 10px;
+  margin-bottom: auto;
+  margin-left: 1110px;
 }
 
-#twitter{
-    animation-name: loop2;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
+h1 {
+  color: rgba(255, 0, 0, 0.863);
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
 }
 
-#whatsapp{
-    animation-name: loop1;
-animation-iteration-count: infinite;
-animation-timing-function: ease-in;
-animation-duration: 2s;
+a:visited {
+  color: blueviolet;
 }
 
+a:active {
+  color: black;
+}
 
-@keyframes loop4{ 
-    0%{ background-image: linear-gradient(to top, red 0 15%, green)} 
-    
-    100%{ background-image: linear-gradient(to top, red 0 60%, green);}
+#lista {
+  background-color: #00f7ff;
+}
+
+body {
+  background-color: #008b6d;
+}
+
+h2 {
+  color: rgba(255, 0, 0, 0.877);
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#centro {
+  display: inline-block;
+  -webkit-transform: translateY(310px);
+          transform: translateY(310px);
+}
+
+#entrenar {
+  display: inline-block;
+  margin-top: auto;
+  margin-right: 10px;
+  margin-bottom: auto;
+  margin-left: 550px;
+  -webkit-transform: translatey(-300px);
+          transform: translatey(-300px);
+}
+
+footer {
+  background-color: #7fccff;
+}
+
+h3 {
+  color: rgba(255, 0, 0, 0.836);
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer div en {
+  color: cyan;
+}
+
+footer div {
+  background-color: #008b84;
+  width: 1100px;
+  height: 50px;
+  border: 5px;
+  border-style: groove;
+  border-color: aquamarine;
+  padding: 5px;
+  margin: 5px;
+}
+
+.redes {
+  display: -ms-grid;
+  display: grid;
+}
+
+#gmail {
+  -webkit-animation-name: loop4;
+          animation-name: loop4;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+#instagram {
+  -webkit-animation-name: loop3;
+          animation-name: loop3;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+#twitter {
+  -webkit-animation-name: loop2;
+          animation-name: loop2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+#whatsapp {
+  -webkit-animation-name: loop1;
+          animation-name: loop1;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes loop4 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, red), to(green));
+    background-image: linear-gradient(to top, red 0 15%, green);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, red), to(green));
+    background-image: linear-gradient(to top, red 0 60%, green);
+  }
+}
+
+@keyframes loop4 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, red), to(green));
+    background-image: linear-gradient(to top, red 0 15%, green);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, red), to(green));
+    background-image: linear-gradient(to top, red 0 60%, green);
+  }
+}
+
+@-webkit-keyframes loop1 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, green), to(blue));
+    background-image: linear-gradient(to top, green 0 15%, blue);
+  }
+  50% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, green), to(blue));
+    background-image: linear-gradient(to top, green 0 40%, blue);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, green), to(blue));
+    background-image: linear-gradient(to top, green 0 60%, blue);
+  }
 }
 
 @keyframes loop1 {
-    0%{ background-image: linear-gradient(to top, green 0 15%, blue)} 
-    50%{background-image: linear-gradient(to top, green 0 40%, blue,) }
-    100%{ background-image: linear-gradient(to top, green 0 60%, blue);}
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, green), to(blue));
+    background-image: linear-gradient(to top, green 0 15%, blue);
+  }
+  50% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, green), to(blue));
+    background-image: linear-gradient(to top, green 0 40%, blue);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, green), to(blue));
+    background-image: linear-gradient(to top, green 0 60%, blue);
+  }
+}
+
+@-webkit-keyframes loop3 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, purple), to(red));
+    background-image: linear-gradient(to top, purple 0 15%, red);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, purple), to(red));
+    background-image: linear-gradient(to top, purple 0 60%, red);
+  }
 }
 
 @keyframes loop3 {
-    0%{ background-image: linear-gradient(to top, purple 0 15%, red)} 
-    
-    100%{ background-image: linear-gradient(to top, purple 0 60%, red)}
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, purple), to(red));
+    background-image: linear-gradient(to top, purple 0 15%, red);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, purple), to(red));
+    background-image: linear-gradient(to top, purple 0 60%, red);
+  }
 }
 
-@keyframes loop2{
-    0%{ background-image: linear-gradient(to top, blue 0 1%, purple)} 
-     
-    100%{ background-image: linear-gradient(to top, blue 0 50%, purple)}
+@-webkit-keyframes loop2 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, blue), to(purple));
+    background-image: linear-gradient(to top, blue 0 1%, purple);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, blue), to(purple));
+    background-image: linear-gradient(to top, blue 0 50%, purple);
+  }
 }
 
-@media screen and (min-width: 320px)
+@keyframes loop2 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, blue), to(purple));
+    background-image: linear-gradient(to top, blue 0 1%, purple);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, blue), to(purple));
+    background-image: linear-gradient(to top, blue 0 50%, purple);
+  }
+}
 
-{
-    header{display: flex;
-        flex-direction: column;
-    justify-content: stretch;
+@media screen and (min-width: 320px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
     width: 330px;
-    }
-    
-    #logo{display: none;}
-
-    footer{
-        height: 340px;
-        width: 330px;
-    }
-    
-    footer div{
-        width: 300px;
-        height: 50px;
-        
-    }
-    
-    main{
-        width: 340px;
-        height: auto;
-        display: flex;
-        justify-content: stretch;
-    }
-    #centro{ 
-        height: 300px;
-        width: 330px;
-        justify-content: stretch;
-    }
-    #entrenar{
-        height: 300px;
-        width: 330px;
-        margin: auto;
-        justify-content: stretch;
-    }
-
-
-    .redes{ grid-template-rows: auto auto auto auto;
+  }
+  #logo {
+    display: none;
+  }
+  footer {
+    height: 340px;
+    width: 330px;
+  }
+  footer div {
+    width: 300px;
+    height: 50px;
+  }
+  main {
+    width: 340px;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  #centro {
+    height: 300px;
+    width: 330px;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  #entrenar {
+    height: 300px;
+    width: 330px;
+    margin: auto;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  .redes {
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    -ms-grid-columns: 60px 20px;
         grid-template-columns: 60px 20px;
-        align-items: center;
-    }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-
-@media screen and (min-width: 1200px)
-
-{
-    
-   main{ display:block;
-         width: 1200px;
-         height: 300px;
-         }
-            
-         #entrenar{display:inline-block;
-         margin-top: auto;
-         margin-right: auto;
-         margin-bottom: auto;
-         margin-left: 500px;   
-         transform: translatey(1px);
-         transform:translatex(35px);
-        }
-
-         #centro{display: inline-block;
-         transform: translateY(-1px);
-        }
- 
-     #logo{position: fixed;
-         display: block;
-         margin-top: auto;
-         margin-right: 100px;
-         margin-bottom: auto;
-         margin-left: 1100px;
-        }
-
-     header{
-         width: 1200px;
-    }
-
-    title{
-        text-align: center;
-    }
-
-    body{
-        height: 609px;
-        width: 1200px;
-    }
-
-    .redes{ grid-template-rows: auto auto auto auto;
-    grid-template-columns: 60px auto;
-    align-items: center;
+@media screen and (min-width: 1200px) {
+  main {
+    display: block;
+    width: 1200px;
+    height: 300px;
+  }
+  #entrenar {
+    display: inline-block;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: 500px;
+    -webkit-transform: translatey(1px);
+            transform: translatey(1px);
+    -webkit-transform: translatex(35px);
+            transform: translatex(35px);
+  }
+  #centro {
+    display: inline-block;
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  #logo {
+    position: fixed;
+    display: block;
+    margin-top: auto;
+    margin-right: 100px;
+    margin-bottom: auto;
+    margin-left: 1100px;
+  }
+  header {
+    width: 1200px;
+  }
+  title {
+    text-align: center;
+  }
+  body {
+    height: 609px;
+    width: 1200px;
+  }
+  .redes {
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    -ms-grid-columns: 60px auto;
+        grid-template-columns: 60px auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer {
+    background-color: #7fccff;
+    width: 1200px;
+  }
+  footer div en {
+    color: cyan;
+  }
+  footer div {
+    background-color: #008b84;
+    width: 1010px;
+    height: 70px;
+    border: 5px;
+    border-style: groove;
+    border-color: aquamarine;
+    padding: 5px;
+    margin: 5px;
+  }
 }
-footer{background-color: rgb(127, 204, 255);
-         width: 1200px;
-        }
-        footer div en{color: cyan;}
-        footer div {background-color: rgb(0, 139, 132);
-            width: 1010px;
-            height: 70px;
-            border: 5px;
-            border-style:groove;
-            border-color: aquamarine;
-            padding: 5px;
-            margin: 5px;}
-}
-
+/*# sourceMappingURL=style.css.map */
