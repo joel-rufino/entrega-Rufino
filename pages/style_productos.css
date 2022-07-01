@@ -1,194 +1,317 @@
-header{background-color:black}
+header {
+  background-color: black;
+}
 
-#logo{position: fixed;
+#logo {
+  position: fixed;
+  display: block;
+  margin-top: auto;
+  margin-right: 10px;
+  margin-bottom: auto;
+  margin-left: 1110px;
+}
+
+h1, #titulo, h2 {
+  color: red;
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+a:visited {
+  color: blueviolet;
+}
+
+a:active {
+  color: black;
+}
+
+#listas {
+  background-color: #00f7ff;
+}
+
+#titulo {
+  color: red;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.producto {
+  border-style: groove;
+  border-color: black;
+}
+
+body {
+  background-color: #008b6d;
+}
+
+footer {
+  background-color: #7fccff;
+}
+
+h3 {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer div en {
+  color: cyan;
+}
+
+footer div {
+  background-color: #008b84;
+  width: 1100px;
+  height: 50px;
+  border: 5px;
+  border-style: groove;
+  border-color: aquamarine;
+  padding: 5px;
+  margin: 5px;
+}
+
+.redes {
+  display: -ms-grid;
+  display: grid;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#gmail {
+  -webkit-animation-name: loop4;
+          animation-name: loop4;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+#instagram {
+  -webkit-animation-name: loop3;
+          animation-name: loop3;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+#twitter {
+  -webkit-animation-name: loop2;
+          animation-name: loop2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+#whatsapp {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: loop1;
+          animation-name: loop1;
+}
+
+@-webkit-keyframes loop4 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, red), to(green));
+    background-image: linear-gradient(to top, red 0 15%, green);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, red), to(green));
+    background-image: linear-gradient(to top, red 0 60%, green);
+  }
+}
+
+@keyframes loop4 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, red), to(green));
+    background-image: linear-gradient(to top, red 0 15%, green);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, red), to(green));
+    background-image: linear-gradient(to top, red 0 60%, green);
+  }
+}
+
+@-webkit-keyframes loop1 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, green), to(blue));
+    background-image: linear-gradient(to top, green 0 15%, blue);
+  }
+  50% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, green), to(blue));
+    background-image: linear-gradient(to top, green 0 40%, blue);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, green), to(blue));
+    background-image: linear-gradient(to top, green 0 60%, blue);
+  }
+}
+
+@keyframes loop1 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, green), to(blue));
+    background-image: linear-gradient(to top, green 0 15%, blue);
+  }
+  50% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, green), to(blue));
+    background-image: linear-gradient(to top, green 0 40%, blue);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, green), to(blue));
+    background-image: linear-gradient(to top, green 0 60%, blue);
+  }
+}
+
+@-webkit-keyframes loop3 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, purple), to(red));
+    background-image: linear-gradient(to top, purple 0 15%, red);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, purple), to(red));
+    background-image: linear-gradient(to top, purple 0 60%, red);
+  }
+}
+
+@keyframes loop3 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, purple), to(red));
+    background-image: linear-gradient(to top, purple 0 15%, red);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, purple), to(red));
+    background-image: linear-gradient(to top, purple 0 60%, red);
+  }
+}
+
+@-webkit-keyframes loop2 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, blue), to(purple));
+    background-image: linear-gradient(to top, blue 0 1%, purple);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, blue), to(purple));
+    background-image: linear-gradient(to top, blue 0 50%, purple);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, blue), to(purple));
+    background-image: linear-gradient(to top, blue 0 1%, purple);
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, blue), to(purple));
+    background-image: linear-gradient(to top, blue 0 50%, purple);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  #logo {
+    display: none;
+  }
+  p {
+    overflow: hidden;
+    width: 200px;
+  }
+  article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  footer {
+    height: 340px;
+    width: 305px;
+  }
+  footer div {
+    width: 275px;
+    height: 50px;
+  }
+  .redes {
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    -ms-grid-columns: 60px 20px;
+        grid-template-columns: 60px 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #logo {
+    position: fixed;
     display: block;
     margin-top: auto;
-    margin-right: 10px;
+    margin-right: 100px;
     margin-bottom: auto;
-    margin-left: 1110px;}    
-
-    h1{color: red;
-    text-decoration: underline;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;}
-
-    a:visited{ color: blueviolet;}
-    a:active{ color: black}
-
-#listas{background-color: rgb(0, 247, 255);}
-
-#titulo{color: red;
-text-decoration: underline;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;}
-
-h2{font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;
-text-decoration: underline;}
-
-p{font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;}
-
-.producto{border-style: groove;
-border-color: black;
-}
-
-
-body{background-color: rgb(0, 139, 109);}
-footer{background-color: rgb(127, 204, 255);}
-
-h3{color: red;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;
-text-decoration: underline;}
-
-footer div en{color: cyan;}
-
-footer div {background-color: rgb(0, 139, 132);
-    width: 1100px;
-    height: 50px;
+    margin-left: 1100px;
+  }
+  article {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  p {
+    overflow: hidden;
+    width: 200px;
+  }
+  body {
+    height: 609px;
+    width: 1200px;
+  }
+  .redes {
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    -ms-grid-columns: 60px auto;
+        grid-template-columns: 60px auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer {
+    background-color: #7fccff;
+    width: 1200px;
+  }
+  footer div en {
+    color: cyan;
+  }
+  footer div {
+    background-color: #008b84;
+    width: 1010px;
+    height: 70px;
     border: 5px;
-    border-style:groove;
+    border-style: groove;
     border-color: aquamarine;
     padding: 5px;
-    margin: 5px;}
-
-    .redes{display: grid;}
-
-    article{display: flex;}
-
-    #gmail{
-        animation-name: loop4;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
-    }
-    
-    #instagram{
-        animation-name: loop3;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 2s;
-    
-    }
-    
-    #twitter{
-        animation-name: loop2;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 2s;
-    }
-    
-    #whatsapp{
-        animation-name: loop1;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
-    }
-    
-    
-    @keyframes loop4{ 
-        0%{ background-image: linear-gradient(to top, red 0 15%, green)} 
-        
-        100%{ background-image: linear-gradient(to top, red 0 60%, green);}
-    }
-    
-    @keyframes loop1 {
-        0%{ background-image: linear-gradient(to top, green 0 15%, blue)} 
-        50%{background-image: linear-gradient(to top, green 0 40%, blue,) }
-        100%{ background-image: linear-gradient(to top, green 0 60%, blue);}
-    }
-    
-    @keyframes loop3 {
-        0%{ background-image: linear-gradient(to top, purple 0 15%, red)} 
-        
-        100%{ background-image: linear-gradient(to top, purple 0 60%, red)}
-    }
-    
-    @keyframes loop2{
-        0%{ background-image: linear-gradient(to top, blue 0 1%, purple)} 
-         
-        100%{ background-image: linear-gradient(to top, blue 0 50%, purple)}
-    }
-
-
-
-
-    @media screen and (min-width: 320px){
-    
-    #logo{display: none;}
-
-    p{
-        overflow: hidden;
-        width: 200px;
-    }
-
-    article{flex-direction: column;
-    align-items: start;}
-    
-    footer{
-        height: 340px;
-        width: 305px;
-    }
-    
-    footer div{
-        width: 275px;
-        height: 50px;
-        
-    }
-
-    .redes{ grid-template-rows: auto auto auto auto;
-        grid-template-columns: 60px 20px;
-        align-items: center;}
-
-
+    margin: 5px;
+  }
 }
-
-@media screen and (min-width: 1200px) 
-{
-
-    #logo{position: fixed;
-        display: block;
-        margin-top: auto;
-        margin-right: 100px;
-        margin-bottom: auto;
-        margin-left: 1100px;}  
-
-
-    article{flex-direction: row;
-        align-items: start;}
-
-        p{
-            overflow: hidden;
-            width: 200px;
-        }
-
-
-  
-
-    body{
-        height: 609px;
-        width: 1200px;
-    }
-
-
-    .redes{ grid-template-rows: auto auto auto auto;
-        grid-template-columns: 60px auto;
-        align-items: center;}
-
-        footer{background-color: rgb(127, 204, 255);
-            width: 1200px;
-           }
-           footer div en{color: cyan;}
-           footer div {background-color: rgb(0, 139, 132);
-               width: 1010px;
-               height: 70px;
-               border: 5px;
-               border-style:groove;
-               border-color: aquamarine;
-               padding: 5px;
-               margin: 5px;}
-   }
-
-
-    
+/*# sourceMappingURL=style_productos.css.map */

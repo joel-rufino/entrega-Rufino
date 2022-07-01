@@ -23,9 +23,8 @@ a:active{ color: black}
 
 body{background-color: rgb(0, 139, 109);}
 
-h2{color:rgba(255, 0, 0, 0.877);
-text-decoration: underline;
-font-family: Arial, Helvetica, sans-serif;}
+h2{@extend h1;
+font-weight: normal;}
 
 
 #centro{display: inline-block;
@@ -40,9 +39,8 @@ transform: translatey(-300px);}
 
 footer{background-color: rgb(127, 204, 255);}
 
-h3{color: rgba(255, 0, 0, 0.836);
-text-decoration: underline;
-font-family: Arial, Helvetica, sans-serif;}
+h3{@extend h1;
+font-weight: normal;}
 
 footer div en{color: cyan;}
 
@@ -57,33 +55,33 @@ margin: 5px;}
 
 .redes{display: grid;}
 
-#gmail{
-    animation-name: loop4;
-animation-iteration-count: infinite;
+@mixin animacion {
+    animation-iteration-count: infinite;
 animation-timing-function: ease-in;
 animation-duration: 2s;
 }
 
+#gmail{
+    @include animacion;
+    animation-name: loop4;
+}
+
 #instagram{
-    animation-name: loop3;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
+ @include animacion;
+ animation-name: loop3;
 
 }
 
 #twitter{
+    @include animacion;
     animation-name: loop2;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
+  
 }
 
 #whatsapp{
+    @include animacion;
     animation-name: loop1;
-animation-iteration-count: infinite;
-animation-timing-function: ease-in;
-animation-duration: 2s;
+
 }
 
 
