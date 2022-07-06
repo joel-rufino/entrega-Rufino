@@ -244,17 +244,17 @@ article {
   }
   footer {
     height: 340px;
-    width: 305px;
+    width: 320px;
   }
   footer div {
-    width: 275px;
-    height: 50px;
+    width: 310px;
+    height: 70px;
   }
   .redes {
     -ms-grid-rows: auto auto auto auto;
         grid-template-rows: auto auto auto auto;
-    -ms-grid-columns: 60px 20px;
-        grid-template-columns: 60px 20px;
+    -ms-grid-columns: 60px 100px;
+        grid-template-columns: 60px 100px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -262,6 +262,12 @@ article {
 }
 
 @media screen and (min-width: 1200px) {
+  h1, #titulo, h2 {
+    text-align: center;
+  }
+  h2 {
+    text-align: left;
+  }
   #logo {
     position: fixed;
     display: block;
@@ -305,7 +311,7 @@ article {
   }
   footer div {
     background-color: #008b84;
-    width: 1010px;
+    width: 1190px;
     height: 70px;
     border: 5px;
     border-style: groove;
