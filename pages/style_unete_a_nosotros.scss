@@ -9,7 +9,8 @@ header{background-color: black;}
     a:visited{ color: blueviolet;}
     a:active{ color: black}
 
-body{background-color: rgb(0, 139, 109);}
+body{background-color: rgb(0, 139, 109);
+background-image: url(../img/cadenas.jpg);}
 h1{color: red;
 text-decoration: underline;
 font-family: Arial, Helvetica, sans-serif;}
@@ -21,7 +22,7 @@ fieldset{border-style:  solid;
     border-color: rgb(0, 89, 255);}
 input{border-style: groove;}
 
-legend{color: black;
+legend{color: red;
 font-family: Arial, Helvetica, sans-serif;
 font-weight: bold;}
 
@@ -109,6 +110,7 @@ animation-duration: 2s;
 h3{
     color: red;
     text-decoration: underline;
+    background-color: black;
 }
 
     footer {

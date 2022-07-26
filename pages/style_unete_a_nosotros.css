@@ -21,6 +21,7 @@ a:active {
 
 body {
   background-color: #008b6d;
+  background-image: url(../img/cadenas.jpg);
 }
 
 h1 {
@@ -44,7 +45,7 @@ input {
 }
 
 legend {
-  color: black;
+  color: red;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
@@ -231,6 +232,7 @@ footer div {
   h3 {
     color: red;
     text-decoration: underline;
+    background-color: black;
   }
   footer {
     height: 340px;

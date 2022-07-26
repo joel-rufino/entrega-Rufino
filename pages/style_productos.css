@@ -37,6 +37,7 @@ a:active {
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  color: #b10909;
 }
 
 .producto {
@@ -44,8 +45,15 @@ p {
   border-color: black;
 }
 
+span {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #b10909;
+}
+
 body {
   background-color: #008b6d;
+  background-image: url(../img/cadenas.jpg);
 }
 
 footer {
@@ -57,6 +65,7 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-decoration: underline;
+  background-color: black;
 }
 
 footer div en {
