@@ -1,3 +1,4 @@
+/*                               HEADER                          */
 header {
   background-color: black;
 }
@@ -11,15 +12,8 @@ header {
   margin-left: 1110px;
 }
 
-h1, h2, h3 {
-  color: rgba(255, 0, 0, 0.863);
-  text-decoration: underline;
-  text-align: center;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-}
-
+/*                               HEADER                          */
+/*                                          NAV                              */
 a:visited {
   color: blueviolet;
 }
@@ -28,19 +22,38 @@ a:active {
   color: black;
 }
 
-#lista {
+nav {
   background-color: #00f7ff;
 }
 
+/*                                          NAV                              */
+/*                                        BODY                               */
 body {
   background-color: #008b6d;
-  background-image: url(./img/cadenas.jpg);
+  background-image: url(../img/cadenas.jpg);
+}
+
+/*                                        BODY                               */
+/*                                         H1,H2,H3                          */
+h1, h2, h3, #titulo {
+  color: rgba(255, 0, 0, 0.863);
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: none;
 }
 
 h2 {
   font-weight: normal;
 }
 
+h3 {
+  font-weight: normal;
+}
+
+/*                                         H1,H2,H3                          */
+/*                             INDEX IMAGENES                         */
 #centro {
   display: inline-block;
   -webkit-transform: translateY(310px);
@@ -57,12 +70,100 @@ h2 {
           transform: translatey(-300px);
 }
 
-footer {
-  background-color: #7fccff;
+/*            INDEX IMAGENES                                        */
+/*                              PRODUCTOS SCSS                             */
+/*                               "PRODUCTOS" P                             */
+.material {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #b10909;
 }
 
-h3 {
-  font-weight: normal;
+/*                          H2                                             */
+#titulo {
+  color: red;
+}
+
+/*                          H2                                             */
+/*                               "PRODUCTOS" P                             */
+/*                              .PRODUCTO                                  */
+.producto {
+  border-style: groove;
+  border-color: black;
+}
+
+/*                              .PRODUCTO                                  */
+/*                             "PRODUCTO" SPAN                             */
+span {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #b10909;
+}
+
+/*                             "PRODUCTO" SPAN                             */
+/*                              ARTICLE                                    */
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section {
+  height: auto;
+  border-style: dotted;
+}
+
+/*                              ARTICLE                                    */
+/*                              PRODUCTOS SCSS                             */
+/*                               NOSOTROS SCCS                              */
+/*                               P                                          */
+.lead {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: #d11c1c;
+}
+
+/*                               P                                          */
+/*                               NOSOTROS SCCS                              */
+/*                               UBICANOS SCSS                              */
+/*                                 H3                                       */
+#bienvenido {
+  color: #1100ff;
+  text-align: center;
+  font-size: 30px;
+}
+
+/*                                 H3                                       */
+/*                               #IMAGEN                                    */
+#imagen {
+  display: block;
+  margin: auto;
+  border-style: outset;
+}
+
+/*                               #IMAGEN                                    */
+/*                               UBICANOS SCSS                              */
+/*                               UNETE A NOSOTROS SCSS                      */
+fieldset {
+  border-style: solid;
+  border-color: #0059ff;
+}
+
+input {
+  border-style: groove;
+}
+
+legend {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/*                               UNETE A NOSOTROS SCSS                      */
+/*                                 FOOTER  (MIXIN, INCLUDE, ANIMATIONS, KEYFRAMES)                             */
+footer {
+  background-color: #7fccff;
+  display: inline-block;
 }
 
 footer div en {
@@ -225,6 +326,8 @@ footer div {
   }
 }
 
+/*                                 FOOTER  (MIXIN, INCLUDE, ANIMATIONS, KEYFRAMES                             */
+/*                                 MEDIA SCREENS                         */
 @media screen and (min-width: 320px) {
   header {
     display: -webkit-box;
@@ -256,24 +359,31 @@ footer div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: stretch;
         -ms-flex-pack: stretch;
             justify-content: stretch;
   }
   #centro {
-    height: 300px;
-    width: 330px;
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
+    height: auto;
+    width: auto;
+    max-width: 310px;
+    max-height: 300px;
+    margin: 5px;
+    -webkit-transform: none;
+            transform: none;
   }
   #entrenar {
-    height: 300px;
-    width: 330px;
-    margin: auto;
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
+    height: auto;
+    width: auto;
+    margin: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    -webkit-transform: none;
+            transform: none;
   }
   .redes {
     -ms-grid-rows: auto auto auto auto;
@@ -284,6 +394,41 @@ footer div {
         -ms-flex-align: center;
             align-items: center;
   }
+  /*                         PRODUCTOS MEDIA SCREEN*/
+  p {
+    overflow: hidden;
+    width: 200px;
+  }
+  article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  /*                         PRODUCTOS MEDIA SCREEN*/
+  /*                         UBICANOS MEDIA SCREEN*/
+  #gimnasio {
+    display: inline-block;
+    margin: auto;
+  }
+  #mapa {
+    display: inline-block;
+    margin: auto;
+  }
+  /*                         UBICANOS MEDIA SCREEN*/
+  /*                     UNETE MEDIA SCREEN*/
+  legend {
+    text-decoration: underline;
+  }
+  h3 {
+    color: red;
+    text-decoration: underline;
+    background-color: black;
+  }
+  /*                    UNETE MEDIA SCREENS*/
 }
 
 @media screen and (min-width: 1200px) {
@@ -300,31 +445,35 @@ footer div {
     margin-left: 500px;
     -webkit-transform: translatey(1px);
             transform: translatey(1px);
-    -webkit-transform: translatex(35px);
-            transform: translatex(35px);
+    -webkit-transform: translatex(190px);
+            transform: translatex(190px);
+    width: 300px;
+    height: 300px;
   }
   #centro {
     display: inline-block;
     -webkit-transform: translateY(-1px);
             transform: translateY(-1px);
+    width: 300px;
+    height: 300px;
   }
   #logo {
     position: fixed;
     display: block;
     margin-top: auto;
-    margin-right: 100px;
+    margin-right: 0px;
     margin-bottom: auto;
-    margin-left: 1100px;
+    margin-left: 1210px;
   }
   header {
-    width: 1200px;
+    width: 1310px;
   }
   title {
     text-align: center;
   }
   body {
     height: 609px;
-    width: 1200px;
+    width: 1310px;
   }
   .redes {
     -ms-grid-rows: auto auto auto auto;
@@ -337,14 +486,14 @@ footer div {
   }
   footer {
     background-color: #7fccff;
-    width: 1200px;
+    width: 1310px;
   }
   footer div en {
     color: cyan;
   }
   footer div {
     background-color: #008b84;
-    width: 1190px;
+    width: 1300px;
     height: 70px;
     border: 5px;
     border-style: groove;
@@ -352,5 +501,67 @@ footer div {
     padding: 5px;
     margin: 5px;
   }
+  /*                         PRODUCTOS MEDIA SCREEN*/
+  p {
+    overflow: hidden;
+    width: 200px;
+  }
+  h1, h2, h3, #titulo {
+    text-align: center;
+  }
+  h2 {
+    text-align: left;
+  }
+  section {
+    display: block;
+    overflow: auto;
+  }
+  article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  /*                         PRODUCTOS MEDIA SCREEN*/
+  /*                              UBICANOS MEDIA SCREEN*/
+  #gimnasio {
+    display: inline-block;
+    margin: auto;
+  }
+  #mapa {
+    display: inline-block;
+    margin: auto;
+  }
+  div {
+    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  /*                                UBICANOS MEDIA SCREEN*/
+  /*                                UNETE MEDIA SCREEN*/
+  legend {
+    text-decoration: underline;
+  }
+  h3 {
+    color: red;
+    text-decoration: underline;
+  }
+  /*                                UNETE MEDIA SCREEN*/
 }
+
+/*                                    MEDIA SCREENS*/
 /*# sourceMappingURL=style.css.map */

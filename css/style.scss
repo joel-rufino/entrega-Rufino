@@ -1,0 +1,417 @@
+@import "colores";
+
+/*                               HEADER                          */
+header{background-color:black}
+#logo{position: fixed;
+display: block;
+margin-top: auto;
+margin-right: 10px;
+margin-bottom: auto;
+margin-left: 1110px;}
+/*                               HEADER                          */
+
+/*                                          NAV                              */
+a:visited{ color: blueviolet;}
+a:active{ color: black}
+nav{background-color: rgb(0, 247, 255);}
+/*                                          NAV                              */
+
+
+/*                                        BODY                               */
+body{background-color:  rgb(0, 139, 109);
+background-image: url(../img/cadenas.jpg);}
+/*                                        BODY                               */
+
+
+/*                                         H1,H2,H3                          */
+h1{color: rgba(255, 0, 0, 0.863);
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:none}
+
+h2{@extend h1;
+    font-weight: normal;}
+
+h3{@extend h1;
+        font-weight: normal;}
+/*                                         H1,H2,H3                          */
+
+
+/*                             INDEX IMAGENES                         */
+#centro{display: inline-block;
+    transform: translateY(310px);}
+    
+    #entrenar{display:inline-block;
+        margin-top: auto;
+       margin-right: 10px;
+        margin-bottom: auto;
+        margin-left: 550px;
+    transform: translatey(-300px);}
+/*            INDEX IMAGENES                                        */
+
+/*                              PRODUCTOS SCSS                             */
+/*                               "PRODUCTOS" P                             */   
+.material{font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(177, 9, 9);}
+
+
+/*                          H2                                             */
+#titulo{color: red;
+        @extend h1;}
+/*                          H2                                             */
+
+
+/*                               "PRODUCTOS" P                             */   
+
+
+/*                              .PRODUCTO                                  */
+.producto{border-style: groove;
+    border-color: black;
+   
+    }
+/*                              .PRODUCTO                                  */
+
+
+/*                             "PRODUCTO" SPAN                             */
+span{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(177, 9, 9);
+}
+/*                             "PRODUCTO" SPAN                             */
+
+
+/*                              ARTICLE                                    */
+article{display: flex;}
+
+section{
+    height: auto;
+    border-style: dotted;
+}
+/*                              ARTICLE                                    */
+/*                              PRODUCTOS SCSS                             */
+
+/*                               NOSOTROS SCCS                              */
+/*                               P                                          */
+.lead{font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: rgb(209, 28, 28);}
+/*                               P                                          */
+/*                               NOSOTROS SCCS                              */
+
+.
+/*                               UBICANOS SCSS                              */
+/*                                 H3                                       */
+#bienvenido{color: rgb(17, 0, 255);
+    text-align: center;
+    font-size: 30px;}
+.
+/*                                 H3                                       */
+/*                               #IMAGEN                                    */
+#imagen{display:block;
+    margin: auto;
+    border-style: outset;}
+
+    /*                               #IMAGEN                                    */
+/*                               UBICANOS SCSS                              */
+
+
+/*                               UNETE A NOSOTROS SCSS                      */
+fieldset{border-style:  solid;
+    border-color: rgb(0, 89, 255);}
+input{border-style: groove;}
+
+legend{color: red;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;}
+/*                               UNETE A NOSOTROS SCSS                      */
+
+
+/*                                 FOOTER  (MIXIN, INCLUDE, ANIMATIONS, KEYFRAMES)                             */
+footer{background-color: rgb(127, 204, 255);
+display: inline-block;}
+footer div en{color:cyan}
+
+footer div {background-color:  rgb(0, 139, 132);
+width: 1100px;
+height: 50px;
+border: 5px;
+border-style:groove;
+border-color: aquamarine;
+padding: 5px;
+margin: 5px;}
+
+.redes{display: grid;}
+
+@mixin animacion {
+    animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+animation-duration: 2s;
+}
+
+#gmail{
+    @include animacion;
+    animation-name: loop4;
+}
+
+#instagram{
+ @include animacion;
+ animation-name: loop3;
+
+}
+
+#twitter{
+    @include animacion;
+    animation-name: loop2;
+  
+}
+
+#whatsapp{
+    @include animacion;
+    animation-name: loop1;
+
+}
+
+
+@keyframes loop4{ 
+    0%{ background-image: linear-gradient(to top, $color2 0 15%, $color1)} 
+    
+    100%{ background-image: linear-gradient(to top, $color2 0 60%, $color1);}
+}
+
+@keyframes loop1 {
+    0%{ background-image: linear-gradient(to top, $color1 0 15%, $color3)} 
+    50%{background-image: linear-gradient(to top, $color1 0 40%, $color3) }
+    100%{ background-image: linear-gradient(to top, $color1 0 60%, $color3);}
+}
+
+@keyframes loop3 {
+    0%{ background-image: linear-gradient(to top, $color4 0 15%, $color2)} 
+    
+    100%{ background-image: linear-gradient(to top, $color4 0 60%, $color2)}
+}
+@keyframes loop2{
+    0%{ background-image: linear-gradient(to top, $color3 0 1%, $color4)} 
+     
+    100%{ background-image: linear-gradient(to top, $color3 0 50%, $color4)}
+}
+/*                                 FOOTER  (MIXIN, INCLUDE, ANIMATIONS, KEYFRAMES                             */
+
+/*                                 MEDIA SCREENS                         */
+@media screen and (min-width: 320px)
+
+{
+    header{display: flex;
+        flex-direction: column;
+    justify-content: stretch;
+    width: 330px;
+    }
+    
+    #logo{display: none;}
+
+    footer{
+        height: 340px;
+        width: 330px;
+    }
+    
+    footer div{
+        width: 310px;
+        height: 70px;
+        
+    }
+    
+    main{
+        width: 340px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    #centro{ 
+        height: auto;
+        width: auto;
+        max-width: 310px;
+        max-height: 300px;
+        margin: 5px;
+        transform: none;
+    }
+    #entrenar{
+        height: auto;
+        width: auto;
+        margin: 10px;
+        max-width: 300px;
+        max-height: 300px;
+        transform: none;
+    }
+
+
+    .redes{ grid-template-rows: auto auto auto auto;
+        grid-template-columns: 60px 100px;
+        align-items: center;
+    }
+
+
+/*                         PRODUCTOS MEDIA SCREEN*/
+p{
+    overflow: hidden;
+    width: 200px;
+}
+
+article{flex-direction: column;
+align-items: start;}
+/*                         PRODUCTOS MEDIA SCREEN*/
+
+
+/*                         UBICANOS MEDIA SCREEN*/
+#gimnasio{
+    display:inline-block;
+    margin:auto;
+}
+
+#mapa {
+    display:inline-block;
+    margin: auto;
+}
+/*                         UBICANOS MEDIA SCREEN*/
+
+
+/*                     UNETE MEDIA SCREEN*/
+    legend {
+        text-decoration: underline;
+    }
+    h3{
+        color: red;
+        text-decoration: underline;
+        background-color: black;
+    }
+/*                    UNETE MEDIA SCREENS*/
+}
+
+
+@media screen and (min-width: 1200px)
+
+{
+    
+   main{ display:block;
+         width: 1200px;
+         height: 300px;
+         
+        
+         }
+            
+         #entrenar{display:inline-block;
+         margin-top: auto;
+         margin-right: auto;
+         margin-bottom: auto;
+         margin-left: 500px;   
+         transform: translatey(1px);
+         transform:translatex(190px);
+         width: 300px;
+         height: 300px;
+        }
+
+         #centro{display: inline-block;
+         transform: translateY(-1px);
+         width: 300px;
+         height: 300px;
+        }
+ 
+     #logo{position: fixed;
+         display: block;
+         margin-top: auto;
+         margin-right: 0px;
+         margin-bottom: auto;
+         margin-left: 1210px;
+      
+        }
+
+     header{
+         width: 1310px;
+    }
+
+    title{
+        text-align: center;
+    }
+
+    body{
+        height: 609px;
+        width: 1310px;
+    }
+
+    .redes{ grid-template-rows: auto auto auto auto;
+    grid-template-columns: 60px auto;
+    align-items: center;
+}
+footer{background-color: rgb(127, 204, 255);
+         width: 1310px;
+        }
+        footer div en{color: cyan;}
+        footer div {background-color: rgb(0, 139, 132);
+            width: 1300px;
+            height: 70px;
+            border: 5px;
+            border-style:groove;
+            border-color: aquamarine;
+            padding: 5px;
+            margin: 5px;}
+
+
+/*                         PRODUCTOS MEDIA SCREEN*/
+p{
+    overflow: hidden;
+    width: 200px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: left;
+}
+section{
+    display: block;
+    overflow: auto;
+}
+
+article{display: flex;
+    flex-direction: row;
+    align-items: start;
+    }
+/*                         PRODUCTOS MEDIA SCREEN*/
+
+
+/*                              UBICANOS MEDIA SCREEN*/
+#gimnasio{
+    display:inline-block;
+    margin:auto;
+}
+
+#mapa {
+    display:inline-block;
+    margin: auto;
+}
+div{ display: inline-block;
+display: flex;
+flex-direction: row;
+justify-content: stretch;}
+.ubicanos{
+    color: red;
+}
+/*                                UBICANOS MEDIA SCREEN*/
+
+
+/*                                UNETE MEDIA SCREEN*/
+legend {
+    text-decoration: underline;
+}
+h3{
+    color: red;
+    text-decoration: underline;
+}
+/*                                UNETE MEDIA SCREEN*/
+}
+/*                                    MEDIA SCREENS*/
